@@ -1,0 +1,1038 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+    background: #111;
+}
+
+a {
+    color: #fff;
+}
+
+nav {
+    background: #0E0E0E;
+}
+
+.navbar {
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.nav-link {
+    margin-right: 32px;
+}
+
+.nav-link,
+.login,
+.register {
+    color: #fff;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.70);
+}
+
+.nav-link:hover {
+    color: #fff;
+    font-style: bolder;
+    font-size: 17px;
+}
+
+.login:hover {
+    color: #fff;
+    font-style: bolder;
+}
+
+.register:hover {
+    color: #fff;
+    font-style: bolder;
+}
+
+
+.navbar-toggler {
+    background-color: #fff;
+}
+
+.navbar-nav {
+    margin-left: 300px;
+    color: #fff;
+}
+
+.aktif {
+    color: #fff;
+    font-weight: bold;
+}
+
+/* .nav-link.active {
+    border-bottom: 4px solid #FDC827;
+    color: #F00;
+} */
+
+/* Hero */
+#hero {
+    background-image: url('../img/hero.png');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+
+.content {
+    padding-top: 136px;
+}
+
+.line {
+    width: 4.528px;
+    height: 24px;
+    transform: rotate(8deg);
+    background: #F00;
+    margin-right: 4px;
+}
+
+.line2 {
+    width: 7.547px;
+    height: 40px;
+    transform: rotate(8deg);
+    background: #F00;
+    margin-right: 16px;
+}
+
+#hero .heading {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#hero button {
+    display: flex;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #FFF;
+    margin-top: 24px;
+}
+
+.cta-hero {
+    background-image: url('../img/cta-hero.png');
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+}
+
+.cta-hero-content {
+    padding-top: 36px;
+    padding-left: 47px;
+    padding-right: 40px;
+}
+
+.cta-hero-text {
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.cta-hero .heading {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.cta-hero .sub-heading {
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.btn-cta-hero {
+    text-align: end;
+    padding-right: 24px;
+}
+
+.cta-hero button {
+    display: inline-flex;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #F00;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+    border: none
+}
+
+/* responsive */
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .navbar-nav {
+        align-items: center;
+        margin: 0;
+    }
+
+    .autentikasi {
+        justify-content: center;
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #hero {
+        background-image: url('../img/hero.png');
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
+    }
+
+    #hero .heading {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    /* .container {
+        padding-right: 7x;
+        padding-left: 7px;
+    } */
+
+    /* .content{
+        padding-top: 100px;
+    } */
+
+    .cta-hero-content {
+        padding: 20px;
+    }
+
+    .cta-hero .heading {
+        font-size: 20px;
+    }
+
+    .btn-cta-hero {
+        text-align: center;
+        margin-top: 10px;
+        padding-right: 0;
+    }
+}
+
+section {
+    padding: 100px 0;
+}
+
+
+/* top-athlete */
+.title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 48px;
+}
+
+.card {
+    width: 367px;
+    gap: 16px;
+    border: none;
+    background: #0C0C0C;
+    color: #fff;
+}
+
+.card-rank {
+    font-size: 80px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+    color: #fff;
+}
+
+.card-point {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: normal;
+    color: rgba(255, 255, 255, 0.50);
+    text-align: right;
+    padding-top: 25px;
+}
+
+.card-name {
+    color: #FFF;
+    font-family: Ubuntu;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.card-subtitle {
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        padding: 0;
+    }
+
+    #top-athlete {
+        padding-top: 50px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .card-rank {
+        font-size: 40px;
+    }
+
+    .card-point {
+        margin-top: -65px;
+        font-size: 20px;
+    }
+}
+
+
+/* race */
+
+#race .date {
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: -35px;
+    margin-bottom: 30px;
+}
+
+#race .table {
+    border: none;
+}
+
+
+#race th {
+    border: none;
+    padding: 8px;
+    text-align: center;
+    background-color: #0C0C0C;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+#race td {
+    border: none;
+    padding: 8px;
+    text-align: center;
+    background-color: #0C0C0C;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+#race th {
+    color: rgba(255, 255, 255, 0.70);
+}
+
+#race td {
+    color: #fff
+}
+
+#race .position {
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#race .points {
+    color: #FFF;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.number {
+    color: rgba(255, 255, 255, 0.50);
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+
+/* Upcoming Race */
+#upcoming .bg-img {
+    background-image: url('../img/upcoming-race.png');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+#upcoming .content {
+    padding-top: 200px;
+    padding-left: 24px;
+}
+
+#upcoming .heading {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#upcoming .sub-heading {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#upcoming .content p {
+    align-self: stretch;
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+#upcoming button {
+    display: inline-flex;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #F00;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+}
+
+@media screen and (max-width: 768px) {
+    #upcoming .content {
+        padding: 25px;
+        padding-top: 75px;
+    }
+
+    #upcoming .heading {
+        font-size: 26px;
+        margin-bottom: 5px;
+    }
+
+    #upcoming .sub-heading {
+        margin-bottom: 5px;
+    }
+
+    .country {
+        margin-top: -20px;
+    }
+}
+
+
+/* Latest Updates */
+.card-title {
+    font-size: 20px;
+    font-weight: 700;
+    align-self: stretch;
+    margin-top: -20px;
+}
+
+.card-text {
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+footer {
+    color: #fff;
+}
+
+footer .text {
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%;
+    /* 32px */
+}
+
+footer .title {
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.129px;
+}
+
+footer .sub-title {
+    color: rgba(255, 255, 255, 0.50);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.129px;
+}
+
+.footer {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* Beda halaman */
+
+#riders-hero {
+    background-image: url('../img/hero-riders.png');
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+}
+
+#riders-hero .title {
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#riders-hero .sub-title {
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: -40px;
+}
+
+#riders-hero .content {
+    padding-top: 70px;
+}
+
+.search {
+    display: flex;
+    width: 367px;
+    padding: 12px 16px;
+    justify-content: space-between;
+    align-items: center;
+    background: #161616;
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.50);
+}
+
+
+
+/* Calender */
+#calender-hero {
+    background-image: url('../img/calender/calender.png');
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+}
+
+#calender-hero .title {
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#calender-hero .sub-title {
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: -40px;
+}
+
+#calender-hero .content {
+    padding-top: 70px;
+}
+
+#calender {
+    margin-top: -100px;
+}
+
+.result {
+    margin-top: 24px;
+    display: flex;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border: 1px solid #FFF;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.get-tiket {
+    margin-top: 20px;
+    display: flex;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    background: #F00;
+}
+
+
+/* detail-rider */
+#detail-rider .number {
+    color: rgba(255, 255, 255, 0.50);
+    font-family: Ubuntu;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 200px;
+}
+
+#detail-rider .name {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#detail-rider .championship {
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#table-spec {
+    margin-top: 75px;
+}
+
+#table-spec .position {
+    border-left: 2px solid #F00;
+    padding-left: 15px;
+    /* Jarak dari garis ke kontennya */
+    margin-bottom: 15px;
+}
+
+
+#table-spec .title {
+    color: rgba(255, 255, 255, 0.50);
+
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#table-spec .number {
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    color: #fff;
+    margin-top: -20px;
+}
+
+#motor {
+    margin-top: -130px;
+}
+
+.motor-spec .sub-heading {
+    color: rgba(255, 255, 255, 0.50);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 16px;
+}
+
+.motor-spec .heading {
+    color: #FFF;
+    font-family: Ubuntu;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 50px;
+}
+
+#about-detail-hero {
+    margin-top: -200px;
+    padding-left: 339px;
+    padding-right: 339px;
+}
+
+#about-detail-hero .heading {
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#about-detail-hero .sub-heading {
+    color: #FFF;
+    text-align: right;
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#about-detail-hero .col-md-6 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+#about-detail-hero .text {
+    margin-top: 32px;
+}
+
+#about-detail-hero p {
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 159.023%;
+}
+
+@media screen and (max-width: 768px) {
+    #table-spec {
+        padding-left: 10px;
+    }
+
+    #detail-rider .number {
+        font-size: 32px;
+    }
+
+    #detail-rider .name {
+        font-size: 32px;
+    }
+
+    #detail-rider .championship {
+        font-size: 20px;
+    }
+
+    #detail-rider .order2 {
+        order: 2;
+        margin-top: -200px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #detail-rider .order1 {
+        order: 1;
+    }
+
+    #table-spec .number {
+        margin-top: -40px;
+        font-size: 32px;
+    }
+
+    #motor {
+        margin-top: -80px;
+    }
+
+
+    .motor-spec .sub-heading {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .motor-spec .heading {
+        font-size: 16px;
+        margin: 0;
+        margin-top: 8px;
+    }
+
+    .col-md-9,
+    .col-md-3 {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    #about-detail-hero {
+        padding-top: 100px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    #about-detail-hero .sub-heading {
+        margin-top: -30px;
+        font-size: 16px;
+    }
+
+    #about-detail-hero .col-md-6 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+
+
+/* News */
+#news {
+    background-image: url('../img/news/hero.png');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+
+#news .heading {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#news button {
+    display: flex;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #FFF;
+    margin-top: 24px;
+}
+
+
+@media screen and (max-width: 768px) {
+    #news {
+        background-image: url('../img/hero.png');
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
+    }
+
+    #news .heading {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .view-more {
+        margin-top: -75px;
+    }
+
+    #news-category {
+        margin-top: 32px;
+    }
+}
+
+
+/* News detail */
+
+.news-detail-hero {
+    background-image: url('../img/news-detail.png');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+.news-detail-hero .title {
+    padding-top: 50px;
+    color: #FFF;
+    font-family: Ubuntu;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.news-detail-hero .sub-title {
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: -30px;
+}
+
+#news-detail .content {
+    margin-top: -100px;
+    padding-left: 400px;
+    padding-right: 400px;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+#login {
+    background-image: url('../img/login.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+#login .content {
+    margin-top: 50px;
+    width: 573px;
+    padding: 48px;
+    gap: 32px;
+
+    background: #0C0C0C;
+}
+
+
+.text-login {
+    color: #FFF;
+    font-family: Ubuntu;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.text-login1 {
+    color: rgba(255, 255, 255, 0.70);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.text-login1-red {
+    color: #dc3545;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+.detail-circuit-text {
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.detail-result {
+    margin-top: -100px;
+    margin-bottom: -70px;
+}
+
+.track {
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.about-detail-circuit {
+    margin-top: -100px;
+}
+
+.galleri-section {
+    margin-top: -100px;
+}
+
+.detail-circuit-text:hover {
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+}
+
+.community {
+    margin-top: -80px;
+}
+
+.community .card{
+    width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .news-detail-hero {
+        background-image: url('../img/news-detail.png');
+        background-size: cover;
+        background-position: center;
+        height: 30vh;
+    }
+
+    #news-detail .content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .detail-result {
+        margin-top: -100px;
+        margin-bottom: 20px;
+    }
+
+    iframe {
+        height: 100%;
+        width: 100%;
+    }
+}
